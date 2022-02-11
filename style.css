@@ -71,12 +71,14 @@ main > p {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     margin-bottom: 40px;
+    background-image: linear-gradient(grey, #fff);
 }
 
 .car-img {
     object-fit: cover;
     width: 250px;
     height: 250px;
+    margin-top: 20px;
 }
 
 .titulo-img {
