@@ -92,6 +92,7 @@ main > p {
 footer {
     background-color: #635c5fab;
     height: 100%;
+    width: 100%;
 }
 
 .content-foo {
