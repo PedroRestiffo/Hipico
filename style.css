@@ -10,6 +10,9 @@ body {
   font-family: "open sans";
 }
 
+.body-reglamento {
+    background: linear-gradient(grey, #fff);
+}
 
 .titulo {
   color: #642a73;
