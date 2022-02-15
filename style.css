@@ -16,7 +16,6 @@ body {
 
 .titulo {
   color: #642a73;
-  font-size: 30px;
   text-align: center;
   margin-bottom: 60px;
 
@@ -63,11 +62,10 @@ main > p {
 
 .titulo-secundario {
     color: #642a73;
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 30px;
 }
-
 
 .carrusel {
     background-color: rgb(149, 245, 245);
@@ -88,7 +86,6 @@ main > p {
 .titulo-img {
     text-align: center;
 }
-
 
 
 /* FOOTER */
