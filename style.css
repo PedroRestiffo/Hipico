@@ -16,7 +16,6 @@ body {
 
 .titulo {
   color: #642a73;
-  font-size: 30px;
   text-align: center;
   margin-bottom: 60px;
 
@@ -63,12 +62,11 @@ main > p {
 
 .titulo-secundario {
     color: #642a73;
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 30px;
 }
-
-
+/*
 .carrusel {
     background-color: rgb(149, 245, 245);
     display: grid;
@@ -88,8 +86,13 @@ main > p {
 .titulo-img {
     text-align: center;
 }
-
-
+*/
+.section-index {
+    background-image: linear-gradient(#fff, grey, #fff);
+}
+#cards {
+    padding-top: 15px;
+}
 
 /* FOOTER */
 
@@ -234,7 +237,9 @@ footer {
     transform: scale(1.2,1.2);
 }
 
-
+.row {
+    display: flex;
+}
 
 /* MEDIA QUERI MOBILE */
 
@@ -278,4 +283,8 @@ footer {
     .section-calendario {
         margin-left: 60px;
     }
+    .card {
+        margin: 15px;
+    }
+
 }
