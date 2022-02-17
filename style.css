@@ -64,59 +64,12 @@ main > p {
   margin-bottom: 30px;
 }
 
-/*
-  .carrusel {
-      background-color: rgb(149, 245, 245);
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-items: center;
-      margin-bottom: 40px;
-      background-image: linear-gradient(grey, #fff);
-  }
-  
-  .car-img {
-      object-fit: cover;
-      width: 250px;
-      height: 250px;
-      margin-top: 20px;
-  }
-  
-  .titulo-img {
-      text-align: center;
-  }
-  */
 .section-index {
   background-image: linear-gradient(#fff, grey, #fff);
 }
 
 #cards {
   padding-top: 15px;
-}
-
-/* FOOTER */
-footer {
-  background-color: gray;
-  height: 100%;
-  width: 100%;
-}
-
-.content-foo {
-  height: auto;
-  color: #fff;
-  font-size: 20px;
-  padding: 15px;
-}
-
-.contenedor-footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 15px;
-  gap: 10px;
-  justify-items: center;
-}
-
-.titulo-final {
-  text-align: center;
 }
 
 /* CALENDARIO */
@@ -132,7 +85,6 @@ footer {
   display: grid;
   grid-template-columns: 300px auto;
   grid-template-areas: "asideC sectionC";
-  border: 3px solid black;
   height: 600px;
 }
 
@@ -148,6 +100,11 @@ footer {
   align-self: center;
 }
 
+/* REGLAMENTO */
+.main-reglamento {
+  margin-top: 100px;
+}
+
 /* NOSOTROS */
 .aside {
   grid-area: asideN;
@@ -159,11 +116,11 @@ footer {
 
 #main-nosotros {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
   grid-template-areas: "asideN sectionN asideN";
   height: 700px;
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 .titulo-nosotros {
@@ -186,19 +143,20 @@ footer {
 /* CONTACTO */
 .section-contacto {
   grid-area: section;
+  margin-top: 35px;
 }
 
 .aside-contacto {
   grid-area: aside;
   align-self: center;
+  justify-self: center;
 }
 
 .main-contacto {
+  margin-left: 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "section aside";
-  justify-items: center;
-  border: solid black 3px;
 }
 
 .titulo-contacto {
@@ -210,21 +168,21 @@ footer {
 }
 
 .telefono {
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
   margin: 15px;
   margin-top: 40px;
 }
 
 .mail {
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
   margin: 15px;
   margin-top: 60px;
 }
 
 .indicaciones {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   margin: 15px;
   margin-top: 80px;
@@ -234,8 +192,30 @@ footer {
   transform: scale(1.2, 1.2);
 }
 
-.row {
-  display: flex;
+/* FOOTER */
+footer {
+  background-color: gray;
+  height: 100%;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.content-foo {
+  height: auto;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.contenedor-footer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 15px;
+  justify-items: center;
+}
+
+.titulo-final {
+  text-align: center;
 }
 
 /* MEDIA QUERI MOBILE */
@@ -244,11 +224,15 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
   }
+  .card {
+    margin: 15px;
+  }
   .texto-nosotros {
     font-size: 14px;
   }
+  /* CONTACTO*/
   .main-contacto {
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(2, 0.3fr);
     grid-template-areas: "section" "aside";
   }
   .maps {
@@ -259,6 +243,7 @@ footer {
   .aside-contacto > .maps:hover {
     transform: scale(0.8, 0.8);
   }
+  /*CALENDARIO*/
   .main-calendario {
     grid-template-areas: "asideC" "sectionC";
   }
@@ -271,8 +256,5 @@ footer {
   }
   .section-calendario {
     margin-left: 60px;
-  }
-  .card {
-    margin: 15px;
   }
 }
