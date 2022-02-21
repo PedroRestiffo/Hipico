@@ -1,274 +1,266 @@
+
 @import "_variables";
 
-
 /* Reseteo */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "open sans";
-  }
-  
-  .body-reglamento {
-    background: linear-gradient(grey, #fff);
-  }
-  
-  .titulo {
-    color: violet;
-    text-align: center;
-    margin-bottom: 600px;
-  }
-  
-  /* Nav */
-  
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 20px;
-    background-color: rgb(108, 58, 189);
-    a {
-      text-decoration: none;
-      text-decoration-style: none;
-      color: #fff;
-      font-weight: 300;
-      &:hover {
-        text-decoration: underline #fff;
-      }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans";
+}
+
+.body-reglamento {
+  background: linear-gradient(grey, #fff);
+}
+
+.titulo {
+  color: $col-tit;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: rgb(165, 55, 165);
+  a {
+    text-decoration: none;
+    text-decoration-style: none;
+    color: #fff;
+    font-weight: 300;
+    &:hover {
+      text-decoration: underline #fff;
     }
   }
-  
-  img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* INDEX */
+
+main {
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  p {
+    margin: 30px;
   }
-  
-  /* INDEX */
-  
-  main {
-    text-align: center;
-    margin-left: 15px;
-    margin-right: 15px;
-    p {
-      margin: 30px;
-    }
+}
+
+.titulo-secundario {
+  color: violet;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-index {
+  background-image: linear-gradient(#fff, grey, #fff);
+  #cards {
+    padding-top: 15px;
   }
-  
-  .titulo-secundario {
-    color: violet;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 30px;
+}
+
+/* CALENDARIO */
+.aside-calendario {
+  grid-area: asideC;
+}
+
+.section-calendario {
+  grid-area: sectionC;
+}
+
+.main-calendario {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-areas: "asideC sectionC";
+  height: 600px;
+}
+
+.aside-calendario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 75px;
+}
+
+.section-calendario {
+  align-self: center;
+}
+
+/* REGLAMENTO */
+.main-reglamento {
+  margin-top: 100px;
+}
+
+/* NOSOTROS */
+.aside {
+  grid-area: asideN;
+}
+
+.section {
+  grid-area: sectionN;
+}
+
+#main-nosotros {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  grid-template-areas: "asideN sectionN asideN";
+  height: 700px;
+  padding-top: 100px;
+}
+
+.titulo-nosotros {
+  color: violet;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.texto-nosotros {
+  font-size: 20px;
+  text-align: center;
+}
+
+.foto-nosotros {
+  height: 640px;
+  width: 100%;
+}
+
+/* CONTACTO */
+.section-contacto {
+  grid-area: section;
+  margin-top: 35px;
+}
+
+.aside-contacto {
+  grid-area: aside;
+  align-self: center;
+  justify-self: center;
+  .maps:hover {
+    transform: scale(1.2, 1.2);
   }
-  
-  .section-index {
-    background-image: linear-gradient(#fff, grey, #fff);
-    #cards {
-      padding-top: 15px;
-    }
+}
+
+.main-contacto {
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "section aside";
+}
+
+.titulo-contacto {
+  color: violet;
+  font-size: 40px;
+  text-align: center;
+  margin: 15px;
+  margin-top: 40px;
+}
+
+.telefono {
+  font-size: 35px;
+  text-align: center;
+  margin: 15px;
+  margin-top: 40px;
+}
+
+.mail {
+  font-size: 35px;
+  text-align: center;
+  margin: 15px;
+  margin-top: 60px;
+}
+
+.indicaciones {
+  font-size: 20px;
+  text-align: center;
+  margin: 15px;
+  margin-top: 80px;
+}
+
+/* FOOTER */
+footer {
+  background-color: gray;
+  margin-top: 100px;
+  margin-bottom: -10px;
+}
+
+.content-foo {
+  height: auto;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.contenedor-footer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 15px;
+  justify-items: center;
+}
+
+.titulo-final {
+  text-align: center;
+}
+
+/* MEDIA QUERI MOBILE */
+@media screen and (max-width: 480px) {
+  .carrusel {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
-  
-  /* CALENDARIO */
-  
-  .aside-calendario {
-    grid-area: asideC;
+  .card {
+    margin: 15px;
   }
-  
-  .section-calendario {
-    grid-area: sectionC;
-  }
-  
-  .main-calendario {
-    display: grid;
-    grid-template-columns: 300px auto;
-    grid-template-areas: "asideC sectionC";
-    height: 600px;
-  }
-  
-  .aside-calendario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    gap: 75px;
-  }
-  .section-calendario {
-    align-self: center;
-  }
-  /* REGLAMENTO */
-  
-  .main-reglamento {
-    margin-top: 100px;
-  }
-  
-  /* NOSOTROS */
-  
-  .aside {
-    grid-area: asideN;
-  }
-  
-  .section {
-    grid-area: sectionN;
-  }
-  
-  #main-nosotros {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 10px;
-    grid-template-areas: "asideN sectionN asideN";
-    height: 700px;
-    padding-top: 100px;
-  }
-  
-  .titulo-nosotros {
-    color: violet;
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
   .texto-nosotros {
-    font-size: 20px;
-    text-align: center;
+    font-size: 14px;
   }
-  
-  .foto-nosotros {
-    height: 640px;
-    width: 100%;
-  }
-  
-  /* CONTACTO */
-  
-  .section-contacto {
-    grid-area: section;
-    margin-top: 35px;
-  }
-  
-  .aside-contacto {
-    grid-area: aside;
-    align-self: center;
-    justify-self: center;
-    .maps:hover {
-      transform: scale(1.2, 1.2);
-    }
-  }
-  
+  /* CONTACTO*/
   .main-contacto {
-    margin-left: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "section aside";
+    grid-template-rows: repeat(2, 0.3fr);
+    grid-template-areas:
+      "section"
+      "aside";
   }
-  
-  .titulo-contacto {
-    color: violet;
-    font-size: 40px;
-    text-align: center;
-    margin: 15px;
-    margin-top: 40px;
-  }
-  .telefono {
-    font-size: 35px;
-    text-align: center;
-    margin: 15px;
-    margin-top: 40px;
-  }
-  .mail {
-    font-size: 35px;
-    text-align: center;
-    margin: 15px;
+  .section-contacto {
     margin-top: 60px;
   }
-  .indicaciones {
-    font-size: 20px;
-    text-align: center;
-    margin: 15px;
-    margin-top: 80px;
-  }
-  
-  
-  /* FOOTER */
-  
-  footer {
-    background-color: gray;
-    height: 100%;
-    width: 100%;
-    margin-top: 100px;
-  }
-  
-  .content-foo {
-    height: auto;
-    color: #fff;
-    font-size: 20px;
-    padding: 15px;
-  }
-  
-  .contenedor-footer {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    padding: 15px;
-    justify-items: center;
-  }
-  
-  .titulo-final {
-    text-align: center;
-  }
-  
-  /* MEDIA QUERI MOBILE */
-  
-  @media screen and (max-width: 480px) {
-    .carrusel {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
-    }
-  
-    .card {
-      margin: 15px;
-    }
-  
-    .texto-nosotros {
-      font-size: 14px;
-    }
-  
-    /* CONTACTO*/
-    .main-contacto {
-      grid-template-rows: repeat(2, 0.3fr);
-      grid-template-areas:
-        "section"
-        "aside";
-    }
-    .maps {
-      height: 300px;
-      width: 200px;
-      margin-top: 25px;
-    }
-  
-    .aside-contacto > .maps:hover {
-      transform: scale(0.8, 0.8);
-    }
-  
-    /*CALENDARIO*/
 
-
-    .main-calendario {
-      grid-template-areas:
-        "asideC"
-        "sectionC";
-    }
-    .aside-calendario {
-      display: flex;
-      flex-direction: row;
-      gap: 10px;
-      margin-top: 120px;
-      margin-left: 50px;
-    }
-    .section-calendario {
-      margin-left: 60px;
-    }
+  .maps {
+    height: 300px;
+    width: 200px;
+    margin-top: 25px;
   }
+  .aside-contacto > .maps:hover {
+    transform: scale(0.8, 0.8);
+  }
+  /*CALENDARIO*/
+  .main-calendario {
+    grid-template-areas:
+      "asideC"
+      "sectionC";
+  }
+  .aside-calendario {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 120px;
+    margin-left: 50px;
+  }
+  .section-calendario {
+    margin-left: 60px;
+  }
+}

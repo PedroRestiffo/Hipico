@@ -1,4 +1,4 @@
-/* VARIABLES */
+/* COLORES */
 /* Reseteo */
 * {
   margin: 0;
@@ -19,7 +19,7 @@ body {
 .titulo {
   color: violet;
   text-align: center;
-  margin-bottom: 600px;
+  margin-bottom: 60px;
 }
 
 /* Nav */
@@ -33,7 +33,7 @@ nav {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 20px;
-  background-color: #6c3abd;
+  background-color: #a537a5;
 }
 
 nav a {
@@ -237,9 +237,8 @@ main p {
 /* FOOTER */
 footer {
   background-color: gray;
-  height: 100%;
-  width: 100%;
   margin-top: 100px;
+  margin-bottom: -10px;
 }
 
 .content-foo {
@@ -281,6 +280,9 @@ footer {
     -ms-grid-rows: (0.3fr)[2];
         grid-template-rows: repeat(2, 0.3fr);
         grid-template-areas: "section" "aside";
+  }
+  .section-contacto {
+    margin-top: 60px;
   }
   .maps {
     height: 300px;
