@@ -17,7 +17,7 @@ body {
 }
 
 .titulo {
-  color: violet;
+  color: pink;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -86,14 +86,14 @@ main p {
 
 /* CALENDARIO */
 .aside-calendario {
-  grid-row: 1;
-  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: asideC;
 }
 
 .section-calendario {
-  grid-row: 1;
-  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: sectionC;
 }
 
@@ -134,21 +134,22 @@ main p {
 
 /* NOSOTROS */
 .aside {
-  grid-row: 1;
-  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: asideN;
 }
 
 .section {
-  grid-row: 1;
-  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: sectionN;
 }
 
 #main-nosotros {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (auto)[3];
       grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
       grid-template-areas: "asideN sectionN asideN";
@@ -175,15 +176,15 @@ main p {
 
 /* CONTACTO */
 .section-contacto {
-  grid-row: 1;
-  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: section;
   margin-top: 35px;
 }
 
 .aside-contacto {
-  grid-row: 1;
-  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: aside;
   -ms-flex-item-align: center;
       align-self: center;
@@ -199,6 +200,7 @@ main p {
   margin-left: 50px;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "section aside";
 }
@@ -249,6 +251,7 @@ footer {
 .contenedor-footer {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (auto)[3];
       grid-template-columns: repeat(3, auto);
   padding: 15px;
   justify-items: center;
@@ -263,6 +266,7 @@ footer {
   .carrusel {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
   }
   .card {
@@ -273,6 +277,7 @@ footer {
   }
   /* CONTACTO*/
   .main-contacto {
+    -ms-grid-rows: (0.3fr)[2];
         grid-template-rows: repeat(2, 0.3fr);
         grid-template-areas: "section"
  "aside";
