@@ -1,10 +1,10 @@
-/* COLORES */
+
 /* Reseteo */
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,119 +12,94 @@ body {
 }
 
 .body-reglamento {
-  background: -webkit-gradient(linear, left top, left bottom, from(grey), to(#fff));
   background: linear-gradient(grey, #fff);
 }
 
 .titulo {
-  color: violet;
+  color: #642a73;
   text-align: center;
   margin-bottom: 60px;
 }
 
 /* Nav */
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 20px;
-  background-color: #a537a5;
-}
 
-nav a {
+a {
   text-decoration: none;
-  -webkit-text-decoration-style: none;
-          text-decoration-style: none;
+  text-decoration-style: none;
   color: #fff;
   font-weight: 300;
 }
 
-nav a:hover {
-  -webkit-text-decoration: underline #fff;
-          text-decoration: underline #fff;
+nav > a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: rgb(108, 58, 189);
 }
 
 img {
   width: 100%;
   height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   overflow: hidden;
 }
-
 /* INDEX */
+
 main {
   text-align: center;
   margin-left: 15px;
   margin-right: 15px;
 }
 
-main p {
+main > p {
   margin: 30px;
 }
 
 .titulo-secundario {
-  color: violet;
+  color: #642a73;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 30px;
 }
 
 .section-index {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(grey), to(#fff));
   background-image: linear-gradient(#fff, grey, #fff);
 }
-
-.section-index #cards {
+#cards {
   padding-top: 15px;
 }
 
 /* CALENDARIO */
+
 .aside-calendario {
-  grid-row: 1;
-  grid-column: 1;
   grid-area: asideC;
 }
 
 .section-calendario {
-  grid-row: 1;
-  grid-column: 2;
   grid-area: sectionC;
 }
 
 .main-calendario {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 300px auto;
-      grid-template-columns: 300px auto;
-      grid-template-areas: "asideC sectionC";
+  grid-template-columns: 300px auto;
+  grid-template-areas: "asideC sectionC";
   height: 600px;
 }
 
 .aside-calendario {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px;
   gap: 75px;
 }
-
 .section-calendario {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 /* REGLAMENTO */
@@ -133,31 +108,26 @@ main p {
 }
 
 /* NOSOTROS */
+
 .aside {
-  grid-row: 1;
-  grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: asideN;
 }
 
 .section {
-  grid-row: 1;
-  grid-column: 2;
   grid-area: sectionN;
 }
 
 #main-nosotros {
-  display: -ms-grid;
   display: grid;
-      grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
-      grid-template-areas: "asideN sectionN asideN";
+  grid-template-areas: "asideN sectionN asideN";
   height: 700px;
   padding-top: 100px;
 }
 
 .titulo-nosotros {
-  color: violet;
+  color: #642a73;
   font-size: 28px;
   text-align: center;
   margin-bottom: 30px;
@@ -174,57 +144,44 @@ main p {
 }
 
 /* CONTACTO */
+
 .section-contacto {
-  grid-row: 1;
-  grid-column: 1;
   grid-area: section;
   margin-top: 35px;
 }
 
 .aside-contacto {
-  grid-row: 1;
-  grid-column: 2;
   grid-area: aside;
-  -ms-flex-item-align: center;
-      align-self: center;
-      justify-self: center;
-}
-
-.aside-contacto .maps:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
+  align-self: center;
+  justify-self: center;
 }
 
 .main-contacto {
   margin-left: 50px;
-  display: -ms-grid;
   display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "section aside";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "section aside";
 }
 
 .titulo-contacto {
-  color: violet;
+  color: #642a73;
   font-size: 40px;
   text-align: center;
   margin: 15px;
   margin-top: 40px;
 }
-
 .telefono {
   font-size: 35px;
   text-align: center;
   margin: 15px;
   margin-top: 40px;
 }
-
 .mail {
   font-size: 35px;
   text-align: center;
   margin: 15px;
   margin-top: 60px;
 }
-
 .indicaciones {
   font-size: 20px;
   text-align: center;
@@ -232,7 +189,12 @@ main p {
   margin-top: 80px;
 }
 
+.aside-contacto > .maps:hover {
+  transform: scale(1.2, 1.2);
+}
+
 /* FOOTER */
+
 footer {
   background-color: gray;
   margin-top: 100px;
@@ -247,9 +209,8 @@ footer {
 }
 
 .contenedor-footer {
-  display: -ms-grid;
   display: grid;
-      grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, auto);
   padding: 15px;
   justify-items: center;
 }
@@ -259,49 +220,50 @@ footer {
 }
 
 /* MEDIA QUERI MOBILE */
+
 @media screen and (max-width: 480px) {
-  .carrusel {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-  }
+  
   .card {
     margin: 15px;
   }
+
   .texto-nosotros {
     font-size: 14px;
   }
+
   /* CONTACTO*/
+
   .main-contacto {
-        grid-template-rows: repeat(2, 0.3fr);
-        grid-template-areas: "section"
- "aside";
+    grid-template-rows: repeat(2, 0.3fr);
+    grid-template-areas:
+      "section"
+      "aside";
   }
+
   .section-contacto {
     margin-top: 60px;
   }
+
   .maps {
     height: 300px;
     width: 200px;
     margin-top: 25px;
   }
+
   .aside-contacto > .maps:hover {
-    -webkit-transform: scale(0.8, 0.8);
-            transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
   }
-  /*CALENDARIO*/
+
+    /*CALENDARIO*/
+    
   .main-calendario {
-        grid-template-areas: "asideC"
- "sectionC";
+    grid-template-areas:
+      "asideC"
+      "sectionC";
   }
   .aside-calendario {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 10px;
     margin-top: 120px;
     margin-left: 50px;
@@ -309,5 +271,7 @@ footer {
   .section-calendario {
     margin-left: 60px;
   }
+  .card {
+    margin: 15px;
+  }
 }
-/*# sourceMappingURL=style.css.map */
