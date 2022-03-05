@@ -55,7 +55,10 @@ main {
 .section-index {
   background-image: linear-gradient(#fff, grey, #fff); }
   .section-index .card {
-    background-color: #724872; }
+    background-color: #eb90df;
+    height: 550px; }
+  .section-index #btn {
+    text-align: center; }
 
 /* CALENDARIO */
 .aside-calendario {
@@ -96,14 +99,14 @@ main {
   padding-top: 100px; }
   #main-nosotros .titulo-nosotros {
     /*Extend*/
-    font-size: 28px;
+    font-size: 35px;
     margin-bottom: 30px; }
   #main-nosotros .foto-nosotros {
     height: 640px;
     width: 100%; }
 
 .texto-nosotros {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center; }
 
 /* CONTACTO */
@@ -164,17 +167,27 @@ footer {
     text-align: center;
     font-size: .9rem; }
 
+/*INTERMEDIA*/
+@media (max-width: 991px) and (min-width: 769px) {
+  .card {
+    margin-top: 15px; }
+    .card #btn {
+      height: 330px; } }
+
 /* MEDIA QUERI TABLETS */
 @media (max-width: 768px) and (min-width: 481px) {
   .card {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+    .card #btn {
+      height: 155px; } }
 
 /* MEDIA QUERI MOBILE */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
   .card {
-    margin: 15px; }
+    margin: 15px;
+    height: 450px; }
   .texto-nosotros {
-    font-size: 14px; }
+    font-size: 16px; }
   /* CONTACTO*/
   .main-contacto {
     grid-template-rows: repeat(2, 0.3fr);
