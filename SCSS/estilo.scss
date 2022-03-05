@@ -69,8 +69,8 @@ main {
 }
 .section-index {
   background-image: linear-gradient(#fff, grey, #fff);
-  #cards {
-    padding-top: 15px;
+  .card  {
+    background-color: rgb(114, 72, 114);
   }
 }
 
@@ -202,6 +202,13 @@ footer {
     font-size: .9rem;
   }
 }
+
+  /* MEDIA QUERI TABLETS */
+  @media (max-width: 768px) and (min-width: 481px) {
+    .card {
+      margin-top: 15px;
+    }
+  }
 
 /* MEDIA QUERI MOBILE */
 @media screen and (max-width: 480px) {

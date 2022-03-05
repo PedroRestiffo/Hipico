@@ -54,8 +54,8 @@ main {
 
 .section-index {
   background-image: linear-gradient(#fff, grey, #fff); }
-  .section-index #cards {
-    padding-top: 15px; }
+  .section-index .card {
+    background-color: #724872; }
 
 /* CALENDARIO */
 .aside-calendario {
@@ -163,6 +163,11 @@ footer {
   footer .titulo-final {
     text-align: center;
     font-size: .9rem; }
+
+/* MEDIA QUERI TABLETS */
+@media (max-width: 768px) and (min-width: 481px) {
+  .card {
+    margin-top: 15px; } }
 
 /* MEDIA QUERI MOBILE */
 @media screen and (max-width: 480px) {
