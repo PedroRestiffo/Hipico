@@ -244,7 +244,7 @@ footer {
   /* CONTACTO*/
   .main-contacto {
     grid-template-rows: repeat(2, 0.3fr);
-    grid-template-areas: "section" "aside"; }
+    grid-template-areas: "section" "aside"; }
   .section-contacto {
     margin-top: 60px; }
   .maps {
@@ -255,7 +255,7 @@ footer {
     transform: scale(0.8, 0.8); }
   /*CALENDARIO*/
   .main-calendario {
-    grid-template-areas: "asideC" "sectionC"; }
+    grid-template-areas: "asideC" "sectionC"; }
   .aside-calendario {
     display: flex;
     flex-direction: row;
